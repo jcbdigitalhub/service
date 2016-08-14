@@ -1,0 +1,36 @@
+// Copyright (c) 2016, www.ossph.com and contributors
+// For license information, please see license.txt
+
+frappe.ui.form.on('RO Checklist', {
+
+//	refresh: function(frm) {
+//
+//	},
+
+
+	quality_checklist: function(frm) {
+//	frm.set_value("code" ,"");
+	if (frm.doc.quality_checklist) {
+                        frappe.call({
+                                method: "service.api.get_ro_checklist",
+                                args: {
+                                        "quality_checklist": frm.doc.quality_checklist
+                                },
+                                callback: function(r) {
+                                        if (r.message) {
+                                                $.each(r.message, function(i, d) {
+                                                        var row = frappe.model.add_child(frm.doc, "RO Checklist Item", "ro_checklist_item");
+                                                        row.code = d.code;
+                                                        row.description = d.description;
+                                                });
+                                        }
+                                        refresh_field("ro_checklist_item");
+                                }
+                        });
+                }
+
+	}
+
+
+});
+
