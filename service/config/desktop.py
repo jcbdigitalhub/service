@@ -8,5 +8,4 @@ def get_data():
 			"icon": "icon-wrench",
 			"type": "module",
 			"label": _("Service Management")
-		}
-	}
+		}}}
