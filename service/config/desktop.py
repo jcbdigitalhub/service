@@ -7,5 +7,5 @@ def get_data():
 			"color": "red",
 			"icon": "icon-wrench",
 			"type": "module",
-			"label": _("Service Management")
+			"label": "Service Management"
 		}}}
