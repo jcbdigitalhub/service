@@ -11,9 +11,9 @@ frappe.views.calendar["Appointment"] = {
 	},
 	gantt: true,
 	get_css_class: function(data) {
-		if(data.status==="Completed") {
+		if(data.status==="Arrived") {
 			return "success";
-		} else if(data.status==="In Process") {
+		} else if(data.status==="Scheduled") {
 			return "warning";
 		} else {
 			return "danger";
