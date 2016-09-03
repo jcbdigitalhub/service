@@ -41,6 +41,9 @@ app_version = "0.0.1"
 # before_install = "service.install.before_install"
 # after_install = "service.install.after_install"
 
+# Calendar
+calendars = ["Appointment"]
+
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config

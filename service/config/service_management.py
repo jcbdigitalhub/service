@@ -8,6 +8,11 @@ def get_data():
                         "items": [
                                 {
                                         "type": "doctype",
+                                        "name": "Appointment"
+                                },
+
+                                {
+                                        "type": "doctype",
                                         "name": "Repair Order"
                                 },
                                 {
