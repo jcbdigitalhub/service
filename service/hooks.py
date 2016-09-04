@@ -42,7 +42,7 @@ app_version = "0.0.1"
 # after_install = "service.install.after_install"
 
 # Calendar
-calendars = ["Appointment"]
+calendars = ["Appointment","Job Control"]
 
 # Desk Notifications
 # ------------------
