@@ -10,7 +10,10 @@ def get_data():
                                         "type": "doctype",
                                         "name": "Appointment"
                                 },
-
+                                {
+                                        "type": "doctype",
+                                        "name": "Repair Estimate"
+                                },
                                 {
                                         "type": "doctype",
                                         "name": "Repair Order"
@@ -19,19 +22,7 @@ def get_data():
                                         "type": "doctype",
                                         "name": "RO Checklist"
                                 },
-                                {
-                                        "type": "doctype",
-                                        "name": "Operations"
-                                },
-                                {
-                                        "type": "doctype",
-                                        "name": "Service Advisor"
-                                },
-                                {
-                                        "type": "doctype",
-                                        "name": "Customer"
-                                },
-
+                                
                         ]
                 },
 		{
@@ -97,6 +88,20 @@ def get_data():
                                         "type": "doctype",
                                         "name": "Diagnosis Codes"
                                 },
+                              
+                                {
+                                        "type": "doctype",
+                                        "name": "Operations"
+                                },
+                                {
+                                        "type": "doctype",
+                                        "name": "Service Advisor"
+                                },
+                                {
+                                        "type": "doctype",
+                                        "name": "Customer"
+                                },
+
                                 {
                                         "type": "doctype",
                                         "name": "Supplies"
