@@ -88,20 +88,10 @@ def get_data():
                                         "type": "doctype",
                                         "name": "Diagnosis Codes"
                                 },
-                              
-                                {
-                                        "type": "doctype",
-                                        "name": "Operations"
-                                },
                                 {
                                         "type": "doctype",
                                         "name": "Service Advisor"
                                 },
-                                {
-                                        "type": "doctype",
-                                        "name": "Customer"
-                                },
-
                                 {
                                         "type": "doctype",
                                         "name": "Supplies"
