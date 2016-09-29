@@ -7,5 +7,8 @@
 #Repair Order
 ![](http://ossph.com/files/RO.PNG)
 
+#Quality Checklist
+![](http://ossph.com/files/RO%20Checklist.PNG)
+
 ## License
 MIT
