@@ -10,5 +10,11 @@
 #Quality Checklist
 ![](http://ossph.com/files/RO%20Checklist.PNG)
 
-## License
+#Job Control
+![](http://ossph.com/files/Job%20Control.PNG)
+
+#Warranty Claim
+![](http://ossph.com/files/Warranty%20Claim.PNG)
+
+# License
 MIT
