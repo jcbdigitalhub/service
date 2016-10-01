@@ -60,8 +60,7 @@ def get_data():
                                 },
                                 {
                                         "type": "doctype",
-                                        "name": "RO Insurance Claim",
-					"label": "Insurance Claim"
+                                        "name": "Insurance Claim"
                                 },
                                 {
                                         "type": "doctype",

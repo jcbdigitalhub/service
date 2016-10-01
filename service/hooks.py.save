@@ -33,32 +33,22 @@ my_account_context = "erpnext.shopping_cart.utils.update_my_account_context"
 # }
 
 # Website
-#fixtures = ["Web Form"]
+fixtures = ["Web Form"]
 
 #website_generators = ["Repair Order"]
 
-website_route_rules = [
-	{"from_route": "/repair_order", "to_route": "Repair Order"}, 
-	{"from_route": "/repair_order/<path:name>", "to_route": "repair_order",
-		"defaults": {
-			"doctype": "Repair Order",
-			"parents": [{"title": "Repair Order", "name": "repair_order"}]
-		}
-	}
-]
-
-portal_menu_items = [
-	{"title": "Repair Orders", "route": "/repair_order", "reference_doctype": "Repair Order"}
-]
-
-has_website_permission = {
-	"Repair Order": "erpnext.controllers.website_list_for_contact.has_website_permission"}
-
-
-
+wbsite_route_rules = [
+#	{"from_route": "/repair_order", "to_route": "Repair Order"}, 
+#	{"from_route": "/repair_order/<path:name>", "to_route": "repair_order",
+#		"defaults": {
+#			"doctype": "Repair Order",
+#			"parents": [{"title": _("Repair Order"), "name": "repair_orders"}]
+#		}
+#	}
+#]
+		
+# Generators
 # ----------
-
-
 
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]

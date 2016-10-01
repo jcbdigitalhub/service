@@ -6,3 +6,23 @@ frappe.ui.form.on('Appointment', {
 
 	}
 });
+
+frappe.ui.form.on("Appointment", "refresh", function(frm) {
+        if(!frm.doc.__islocal) {
+                frm.add_custom_button(__("Repair Estimate"), function() {
+                        frappe.route_options = {
+                                appointment: frm.doc.name
+                        }
+                        frappe.set_route("List", "Repair Estimate");
+                });
+
+                frm.add_custom_button(__("Repair Order"), function() {
+                        frappe.route_options = {
+                                appointment: frm.doc.name
+                        }
+                        frappe.set_route("List", "Repair Order");
+                });
+
+
+        }
+});
