@@ -4,6 +4,10 @@
 
 from __future__ import unicode_literals
 import frappe
+import frappe.utils
+from frappe.utils import cstr, flt, getdate, comma_and, cint
+from frappe import _
+from frappe.model.mapper import get_mapped_doc
 from frappe.model.document import Document
 
 class Appointment(Document):
@@ -33,3 +37,16 @@ def get_events(start, end, filters=None):
                 }, as_dict=True, update={"allDay": 0})
         return data
 
+@frappe.whitelist()
+def make_repair_estimate(source_name, target_doc=None):
+		doc = get_mapped_doc("Appointment", source_name, {
+			"Appointment": {
+				"doctype": "Repair Estimate",
+				"validation": {
+					"docstatus": ["=",0]},
+				"field_map":{
+					"customer": "customer",
+					"serial_no": "serial_no"}
+				}
+			},target_doc, postprocess=None)
+		return doc
